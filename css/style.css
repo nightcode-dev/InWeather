@@ -1,0 +1,107 @@
+
+@font-face {
+  font-family:'Dmikhak';
+  src: url('../mikhak/dark-mikhak.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'mikhak';
+  src: url('../mikhak/normal-mikhak.ttf') format('truetype');
+  
+}
+
+
+@font-face {
+  font-family: 'Tmikhak';
+  src: url('../mikhak/thin-mikhak.ttf') format('truetype');
+}
+
+@font-face {
+  font-family:'Bmikhak';
+  src: url('../mikhak/bold-mikhak.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'DBmikhak';
+  src: url('../mikhak/dif-bold-mikhak.ttf') format('truetype');
+  
+}
+
+
+@font-face {
+  font-family: 'Mmikhak';
+  src: url('../mikhak/medium-mikhak.ttf') format('truetype');
+}
+
+body {
+    background: #1D1B1C
+}
+
+#center-box {
+  background:white;
+  margin-right:5%;
+  margin-left:5%;
+  margin-top:10%;
+  padding:2.5%;
+  border-radius:10px;
+  text-align:center;
+}
+
+td {
+  font-size:11px;
+  text-align:center;
+  font-family:Mmikhak;
+}
+table{
+  border-radius:10px
+}
+tr{
+  border-radius:10px;
+}
+
+#pos{
+  text-align:center;
+  font-family:DBmikhak;
+}
+
+#short {
+  margin-bottom:5%;
+  text-align:center;
+}
+
+.lab{
+  text-align:right;
+  font-family:mikhak
+}
+.change{
+  margin-right:1%;
+  font-family:Mmikhak;
+}
+.ending{
+  margin-left:1%;
+  font-family:Mmikhak;
+}
+#weather {
+  font-family:mikhak;
+}
+#btn{
+  font-family:mikhak;
+}
+.modal-title {
+  font-family:Bmikhak;
+}
+
+#city {
+  font-family:Mmikhak;
+}
+
+#ostan {
+  font-family:Mmikhak;
+}
+
+#err {
+  font-family:Mmikhak;
+  display:none;
+}
