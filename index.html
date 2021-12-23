@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>InWeather</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+ <div id="center-box">
+   <div id="short">
+   <h2 id="pos">تهران،تهران</h2>
+   <h3 id="weather">ابری</h3>
+   <img id="icon" src="" alt="weather type">
+   </div>
+  <table class="table table-bordered">
+    <tr>
+      <td><span id="temp">دما:کلوین </span><span id="low-temp">کمترین دما: </span><span id="max-temp">بیشترین دما: </span></td>
+    </tr>
+    <tr>
+     <td><span id="press">فشار:</span></td>
+    </tr>
+    <tr>
+      <td><span id="hum">رطوبت:</span></td>
+    </tr>
+    <tr>
+      <td><span id="wind-speed">سرعت باد:</span></td>
+    </tr>
+    <tr>
+      <td><span id="lon">طول جغرافیایی: </span><span id="lat">عرض جغرافیایی: </span></td>
+    </tr>
+  </table>
+  
+  <button class="btn btn-dark" id="btn" data-toggle="modal" data-target="#myModal">تغییر موقعیت</button>
+ </div>
+ <div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">تغییر موقعیت</h5>
+       
+      </div>
+      <div class="modal-body">
+       <div class="alert alert-danger err" id="err">
+         مکان مورد نظر یافت نشده
+       </div>
+        <br>
+        <p class="lab" for="ostan">نام استان</p>
+        <input type="text" id="ostan" name="ostan" class="form-control" placeholder="استان"/>
+        <br>
+        <p class="lab" for="city">نام شهر</p>
+        <input type="text" id="city" name="city" class="form-control" placeholder="شهر"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger ending" data-dismiss="modal">بستن</button>
+        <button type="button" class="btn btn-outline-dark change" id="change">تغییر</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Project -->
+   <script src="js/storage.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
